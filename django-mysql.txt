@@ -1,0 +1,8 @@
+#create the database
+CREATE DATABASE waltons CHARACTER SET utf8;
+
+#create user
+CREATE USER 'django_user'@'localhost' IDENTIFIED BY 'password';
+
+#give user permissions to db
+GRANT ALL ON waltons.* TO 'django_user'@'localhost';
